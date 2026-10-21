@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/mockable/integrations
+- https://zapier.com/apps/mockable-io/integrations
+- https://n8n.io/integrations/mockable/
+- https://composio.dev/toolkits/mockable
+- https://monid.ai/tools/mockable
+checked:
+- https://composio.dev/toolkits/mockable
+- https://monid.ai/tools/mockable
+- https://n8n.io/integrations/mockable/
+- https://zapier.com/apps/mockable-io/integrations
+- https://zapier.com/apps/mockable/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

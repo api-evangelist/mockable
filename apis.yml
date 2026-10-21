@@ -1,23 +1,59 @@
 aid: mockable
+
 name: mockable.io
-description: 'mockable.io is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'mockable.io provides a simple API mocking service that allows developers to quickly create mock endpoints for testing and development. The platform offers a user-friendly interface, customizable responses, and supports various HTTP methods and status codes. It aims to streamline the development workflow by eliminating the need for building full backend services during early stages, enabling faster iteration and more reliable testing of client applications. The service is accessible via a web dashboard and integrates with CI/CD pipelines through API calls.'
+
 url: https://raw.githubusercontent.com/api-evangelist/mockable/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- API-Mocking
+- Development-Tools
+- Testing
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/mockable-hosts.yml
 - type: Website
   url: https://mockable.io/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://mockable.io/
+    status: null
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
